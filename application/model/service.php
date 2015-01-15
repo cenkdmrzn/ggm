@@ -1,6 +1,6 @@
 <?php
 
-class Model
+class Service
 {
     /**
      * @param object $db A PDO database connection

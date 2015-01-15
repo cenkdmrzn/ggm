@@ -10093,7 +10093,7 @@
 		 * Note that prior to DataTables 1.9.2 mData was called mDataProp. The name change
 		 * reflects the flexibility of this property and is consistent with the naming of
 		 * mRender. If 'mDataProp' is given, then it will still be used by DataTables, as
-		 * it automatically maps the old name to the new if required.
+		 * it automatically mapconfig the old name to the new if required.
 		 *  @type string|int|function|null
 		 *  @default null <i>Use automatically calculated column index</i>
 		 *  @dtopt Columns

@@ -1367,7 +1367,7 @@
 
         getRegion: function (el, x, y) {
             var i,
-                regionMap = this.regionMap; // maps regions to value positions
+                regionMap = this.regionMap; // mapconfig regions to value positions
             for (i = regionMap.length; i--;) {
                 if (regionMap[i] !== null && x >= regionMap[i][0] && x <= regionMap[i][1]) {
                     return regionMap[i][2];
@@ -2260,7 +2260,7 @@
             pie._super.init.call(this, el, values, options, width, height);
 
             this.shapes = {}; // map shape ids to value offsets
-            this.valueShapes = {}; // maps value offsets to shape ids
+            this.valueShapes = {}; // mapconfig value offsets to shape ids
             this.values = values = $.map(values, Number);
 
             if (options.get('width') === 'auto') {

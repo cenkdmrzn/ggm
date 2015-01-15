@@ -72,7 +72,7 @@
                         <li><a href="<?php echo URL; ?>services"><i class="fa fa-th-list"></i>Service List</a></li>
                     </ul>
                 </li>
-                <li> <a href="<?php echo URL; ?>maps/mapconfig"> <i class="fa fa-cogs"></i> <span>Map Config</span> </a> </li>
+                <li> <a href="<?php echo URL; ?>mapconfig/"> <i class="fa fa-cogs"></i> <span>Map Config</span> </a> </li>
                 <li> <a href="../__pages/preview.html"> <i class="fa fa-desktop"></i> <span>Preview</span> </a> </li>
             </ul>
         </section>
