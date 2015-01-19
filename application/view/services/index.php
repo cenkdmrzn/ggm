@@ -30,72 +30,14 @@
                             </tr>
                             </thead>
                             <tbody>
+
+                            <?php foreach($service_list as $service) { ?>
                             <tr>
-                                <td>Trident</td>
-                                <td>Explorer 4.0</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="<?php echo URL; ?>services/edit">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
+                                <td><?php if(isset($service->id)) echo htmlspecialchars($service->id, ENT_QUOTES, 'UTF-8'); ?></td>
+                                <td><?php if(isset($service->ser_name)) echo htmlspecialchars($service->ser_name, ENT_QUOTES, 'UTF-8'); ?></td>
+                                <td><a href="<?php echo URL . 'services/edit/' . htmlspecialchars($service->id, ENT_QUOTES, 'UTF-8'); ?>" class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit">edit</a></td>
                             </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Explorer 5.0</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Explorer 5.5</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Explorer 6</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Win XP SP2+</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Win XP</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>1.7</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>1.8</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>Win 2k+ / OSX.3+</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>1.8</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
+                            <?php } ?>
                             </tbody>
                             <tfoot>
                             <tr>
@@ -116,7 +58,7 @@
 </aside>
 
 
-
+<link href="<?php echo URL; ?>/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- DATA TABES SCRIPT -->

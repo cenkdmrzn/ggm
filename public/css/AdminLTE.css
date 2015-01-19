@@ -1172,6 +1172,11 @@ body > .ggm_header .ggm_logo .icon {
 .radio {
   padding-left: 0;
 }
+
+.ggm_form-group {
+    margin-bottom: 15px;
+}
+
 /* 
     Compenent: Progress bars
 --------------------------------

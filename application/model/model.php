@@ -14,10 +14,11 @@ class Model
         }
     }
 
+
     public function getAllList(){
 
-        $sql = "SELECT * FROM ggm_service";
-        $query = $this->db-prepare($sql);
+        $sql = "SELECT id, ser_name FROM ggm_service";
+        $query = $this->db->prepare($sql);
         $query->execute();
 
         return $query->fetchAll();

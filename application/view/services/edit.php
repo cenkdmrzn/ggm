@@ -25,7 +25,7 @@
                         <div class="box-body">
                             <div class="ggm_form-group">
                                 <label for="ggm_service_name">Service Name</label>
-                                <input type="text" class="form-control" name="ggm_service_name" id="ggm_service_name">
+                                <input type="text" class="form-control" name="ggm_service_name" id="ggm_service_name" value="<?php echo htmlspecialchars($service->ser_name, ENT_QUOTES, 'UTF-8'); ?>">
                             </div>
                             <div class="ggm_form-group">
                                 <label>Locations</label>

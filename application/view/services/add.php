@@ -1,6 +1,4 @@
 
-
-<!-- Right side column. Contains the navbar and content of the page -->
 <aside class="ggm_right-side">
     <!-- Content Header (Page header) -->
     <section class="ggm_content-header">
@@ -21,7 +19,7 @@
                     <div class="box-header">
                     </div><!-- /.box-header -->
                     <!-- form start -->
-                    <form role="form" name="ggm_serviceform" id="ggm_serviceform" method="get">
+                    <form role="form" name="ggm_serviceform" id="ggm_serviceform" method="POST" action="<?php echo URL; ?>services/addservice">
                         <div class="box-body">
                             <div class="ggm_form-group">
                                 <label for="ggm_service_name">Service Name</label>

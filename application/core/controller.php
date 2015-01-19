@@ -11,7 +11,7 @@ class Controller
      * @var null Model
      */
     public $model = null;
-
+    public $temp;
     /**
      * Whenever controller is created, open a database connection too and load "the model".
      */
@@ -25,7 +25,7 @@ class Controller
     /**
      * Open the database connection with the credentials from application/config/config.php
      */
-    private function openDatabaseConnection()
+    private  function openDatabaseConnection()
     {
         // set the (optional) options of the PDO connection. in this case, we set the fetch mode to
         // "objects", which means all results will be objects, like this: $result->user_name !
@@ -46,7 +46,16 @@ class Controller
     {
         require APP . '/model/'.strtolower($model).'.php';
         // create new "model" (and pass the database connection)
-        return  new $model($this->db);
+        $this->{$model} = new $model($this->db);
 
+    }
+
+    public function __get($variable)
+    {
+        return $this->temp[$variable];
+    }
+    public function __set($variable, $value)
+    {
+        $this->temp[$variable] = $value;
     }
 }
