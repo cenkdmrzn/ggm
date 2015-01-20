@@ -38,7 +38,7 @@ class Services extends Controller
     }
 
 
-    public function edit($id)
+    public function editService($id)
     {
 
         if(isset($id)){
@@ -52,7 +52,16 @@ class Services extends Controller
             header('location: ' . URL . 'services/index');
 
         }
+    }
 
+
+    public function updateService()
+    {
+        if(isset($_POST['ggm_service_submit'])){
+            $this->Service->updateService($_POST["id"], $_POST["ggm_service_name"]);
+        }
+
+        header('location: ' . URL . 'services/index');
     }
 
 }

@@ -52,8 +52,13 @@ class Service
     }
 
 
-    public function editService($id)
+    public function updateService($id, $service_name)
     {
+        $sql = "UPDATE ggm_service SET ser_name = :ser_name, ser_updated= current_timestamp WHERE id = :id";
+        $query = $this->db->prepare($sql);
+        $parameters = array(':ser_name' => $service_name, ':id' => $id);
+
+        $query->execute($parameters);
 
     }
 

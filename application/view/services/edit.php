@@ -21,11 +21,13 @@
                     <div class="box-header">
                     </div><!-- /.box-header -->
                     <!-- form start -->
-                    <form role="form" name="ggm_serviceform" id="ggm_serviceform" method="get">
+                    <form role="form" name="ggm_serviceform" id="ggm_serviceform" method="post" action="<?php echo URL; ?>services/updateservice">
                         <div class="box-body">
                             <div class="ggm_form-group">
                                 <label for="ggm_service_name">Service Name</label>
                                 <input type="text" class="form-control" name="ggm_service_name" id="ggm_service_name" value="<?php echo htmlspecialchars($service->ser_name, ENT_QUOTES, 'UTF-8'); ?>">
+                                <input type="hidden" name="id" value="<?php echo htmlspecialchars($service->id, ENT_QUOTES, 'UTF-8'); ?>" />
+
                             </div>
                             <div class="ggm_form-group">
                                 <label>Locations</label>

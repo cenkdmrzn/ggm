@@ -35,7 +35,7 @@
                             <tr>
                                 <td><?php if(isset($service->id)) echo htmlspecialchars($service->id, ENT_QUOTES, 'UTF-8'); ?></td>
                                 <td><?php if(isset($service->ser_name)) echo htmlspecialchars($service->ser_name, ENT_QUOTES, 'UTF-8'); ?></td>
-                                <td><a href="<?php echo URL . 'services/edit/' . htmlspecialchars($service->id, ENT_QUOTES, 'UTF-8'); ?>" class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit">edit</a></td>
+                                <td><a href="<?php echo URL . 'services/editservice/' . htmlspecialchars($service->id, ENT_QUOTES, 'UTF-8'); ?>" class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit">edit</a></td>
                             </tr>
                             <?php } ?>
                             </tbody>
