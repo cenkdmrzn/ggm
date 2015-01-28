@@ -2,11 +2,11 @@
 <aside class="ggm_right-side">
     <!-- Content Header (Page header) -->
     <section class="ggm_content-header">
-        <h1> Service List </h1>
+        <h1>Client List </h1>
         <ol class="ggm_breadcrumb">
             <li><a href="<?php echo URL; ?>home"><i class="fa fa-dashboard"></i>Home Page</a></li>
-            <li>Service</li>
-            <li class="active">Service List</li>
+            <li>Client</li>
+            <li class="active">Client List</li>
         </ol>
     </section>
 
@@ -26,68 +26,34 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Client Name</th>
+                                <th>Client Email</th>
+                                <th>Client Website</th>
                                 <th>Actions</th>
                             </tr>
                             </thead>
                             <tbody>
+
+                            <?php foreach($client_list as $client){?>
+
                             <tr>
-                                <td>Trident</td>
-                                <td>Explorer 4.0</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="<?php echo URL; ?>services/edit">Edit</a>
+                                <td><?php if(isset($client->id)) echo htmlspecialchars($client->id, ENT_QUOTES, 'UTF-8'); ?></td>
+                                <td><?php if(isset($client->client_name)) echo htmlspecialchars($client->client_name, ENT_QUOTES, 'UTF-8'); ?></td>
+                                <td><?php if(isset($client->client_email)) echo htmlspecialchars($client->client_email, ENT_QUOTES, 'UTF-8'); ?></td>
+                                <td><?php if(isset($client->client_website)) echo htmlspecialchars($client->client_website, ENT_QUOTES, 'UTF-8'); ?></td>
+                                <td><a href="<?php echo URL . 'clients/editclient/' . htmlspecialchars($client->id, ENT_QUOTES, 'UTF-8'); ?>" class="btn btn-success btn-sm" class="ggm_client_edit" id="ggm_client_edit">edit</a>
+
+
                             </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Explorer 5.0</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a>
-                            </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Explorer 5.5</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a>
-                            </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Explorer 6</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a>                             </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Win XP SP2+</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a>                             </tr>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Win XP</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a> |
-                                    <a class="btn btn-danger btn-sm" class="ggm_service_del" id="ggm_service_del" href="">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>1.7</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a>                             </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>1.8</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a>
-                            </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>Win 98+ / OSX.2+</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a>
-                            </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>Win 2k+ / OSX.3+</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a>
-                            </tr>
-                            <tr>
-                                <td>Gecko</td>
-                                <td>1.8</td>
-                                <td><a class="btn btn-success btn-sm" class="ggm_service_edit" id="ggm_service_edit" href="edit_service.html">Edit</a>
-                            </tr>
+                            <?php }?>
+
+
                             </tbody>
                             <tfoot>
                             <tr>
                                 <th>ID</th>
                                 <th>Client Name</th>
+                                <th>Client Email</th>
+                                <th>Client Website</th>
                                 <th>Actions</th>
                             </tr>
                             </tfoot>

@@ -19,7 +19,7 @@
                     <div class="box-header">
                     </div><!-- /.box-header -->
                     <!-- form start -->
-                    <form role="form" name="ggm_serviceform" id="ggm_serviceform" method="POST" action="<?php echo URL; ?>services/addservice">
+                    <form role="form" name="ggm_serviceform" id="ggm_serviceform" method="POST" action="<?php echo URL; ?>services/add">
                         <div class="box-body">
                             <div class="ggm_form-group">
                                 <label for="ggm_service_name">Service Name</label>

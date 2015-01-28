@@ -1,10 +1,8 @@
 
-
-<!-- Right side column. Contains the navbar and content of the page -->
 <aside class="ggm_right-side">
     <!-- Content Header (Page header) -->
     <section class="ggm_content-header">
-        <h1>Add Service</h1>
+        <h1>Add Client</h1>
         <ol class="ggm_breadcrumb">
             <li><a href="<?php echo URL; ?>home"><i class="fa fa-dashboard"></i>Home Page</a></li>
             <li>Clients</li>
@@ -21,7 +19,7 @@
                     <div class="box-header">
                     </div><!-- /.box-header -->
                     <!-- form start -->
-                    <form role="form" name="ggm_clientform" id="ggm_clientform" method="get">
+                    <form role="form" name="ggm_clientform" id="ggm_clientform" method="post" action="<?php echo URL; ?>clients/addclient">
                         <div class="box-body">
                             <div class="ggm_form-group">
                                 <label for="ggm_client_name">Client Name</label>
@@ -29,15 +27,15 @@
                             </div>
                             <div class="ggm_form-group">
                                 <label for="ggm_client_name">Client Password</label>
-                                <input type="text" class="form-control" name="ggm_client_password" id="ggm_client_password">
+                                <input type="password" class="form-control" name="ggm_client_password" id="ggm_client_password">
                             </div>
                             <div class="ggm_form-group">
                                 <label for="ggm_client_">Client Email</label>
-                                <input type="text" class="form-control" name="ggm_client_" id="ggm_client_">
+                                <input type="text" class="form-control" name="ggm_client_email" id="ggm_client_email">
                             </div>
                             <div class="ggm_form-group">
                                 <label for="ggm_client_">Client Website</label>
-                                <input type="text" class="form-control" name="ggm_client_" id="ggm_client_">
+                                <input type="text" class="form-control" name="ggm_client_website" id="ggm_client_website">
                             </div>
 
                             <div class="ggm_form-group">
@@ -67,7 +65,7 @@
                         <!-- /.box-body -->
 
                         <div class="box-footer">
-                            <button class="btn btn-primary btn-flat" type="submit" name="ggm_service_submit" id="ggm_service_submit">Submit</button>
+                            <button class="btn btn-primary btn-flat" type="submit" name="ggm_submit_client" id="ggm_submit_client">Submit</button>
                         </div>
                     </form>
                 </div><!-- /.box -->

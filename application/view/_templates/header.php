@@ -22,7 +22,7 @@
 </head>
 <body class="ggm_skin-blue">
 <!-- header logo: style can be found in header.less -->
-<header class="ggm_header"> <a href="../__pages/index.html" class="ggm_logo"> Glacial Google Module </a>
+<header class="ggm_header"> <a href="#" class="ggm_logo"> Glacial Google Map</a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="ggm_navbar ggm_navbar-static-top" role="navigation">
         <!-- Sidebar toggle button-->
