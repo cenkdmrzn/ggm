@@ -29,25 +29,25 @@
                                 <label>Locations</label>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" class="minimal" name="ggm_service_loc" id="loc_1"/>
+                                        <input type="checkbox" class="minimal" name="ggm_service_loc[]" id="loc_1"/>
                                         Location 1 </label>
                                     <label>
-                                        <input type="checkbox" class="minimal" name="ggm_service_loc" id="loc_2"/>
+                                        <input type="checkbox" class="minimal" name="ggm_service_loc[]" id="loc_2"/>
                                         Location 2 </label>
                                     <label>
-                                        <input type="checkbox" class="minimal" name="ggm_service_loc" id="loc_3"/>
+                                        <input type="checkbox" class="minimal" name="ggm_service_loc[]" id="loc_3"/>
                                         Location 3 </label>
                                     <label>
-                                        <input type="checkbox" class="minimal" name="ggm_service_loc" id="loc_4"/>
+                                        <input type="checkbox" class="minimal" name="ggm_service_loc[]" id="loc_4"/>
                                         Location 4 </label>
                                     <label>
-                                        <input type="checkbox" class="minimal" name="ggm_service_loc" id="loc_5"/>
+                                        <input type="checkbox" class="minimal" name="ggm_service_loc[]" id="loc_5"/>
                                         Location 5 </label>
                                     <label>
-                                        <input type="checkbox" class="minimal" name="ggm_service_loc" id="loc_6"/>
+                                        <input type="checkbox" class="minimal" name="ggm_service_loc[]" id="loc_6"/>
                                         Location 6 </label>
                                     <label>
-                                        <input type="checkbox" class="minimal" name="ggm_service_loc" id="loc_7"/>
+                                        <input type="checkbox" class="minimal" name="ggm_service_loc[]" id="loc_7"/>
                                         Location 7 </label>
                                 </div>
                             </div>

@@ -86,9 +86,8 @@
     <h4>Zoom Control Options</h4>
     <div class="checkbox">
         <div class="col-xs-3">
-
             <label>
-                <input type="radio" name="ggm_map_zoomcontrol" id="ggm_map_zoomcontrol_small" value="Small" class="minimal" <?php if (isset($map->zoom_control_options)) && (htmlspecialchars($map->zoom_control_options, ENT_QUOTES, 'UTF-8') == 'Small') ?>checked='checked'<?php endif; ?>>
+                <input type="radio" name="ggm_map_zoomcontrol" id="ggm_map_zoomcontrol_small" value="Small" class="minimal">
                 Small </label>
         </div>
         <div class="col-xs-3">

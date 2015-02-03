@@ -11,6 +11,7 @@ class Controller
      * @var null Model
      */
     public $model = null;
+    public $main_model = null;
     public $temp;
     /**
      * Whenever controller is created, open a database connection too and load "the model".
@@ -19,7 +20,8 @@ class Controller
     {
         $this->openDatabaseConnection();
         //$this->loadModel();
-
+        require APP . '/model/model.php';
+        $this->main_model = new Model($this->db);
     }
 
     /**
